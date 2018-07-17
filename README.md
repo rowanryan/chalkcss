@@ -1,4 +1,4 @@
-# Chalk CSS
+# Chalk CSS v1.0.0
 
 A simple and clean css framework made by Jonathan van de Groep.
 
