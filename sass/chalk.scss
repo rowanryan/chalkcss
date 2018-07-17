@@ -1,0 +1,438 @@
+// Import Montserrat Font
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+// Main colors
+$color-primary: #0085b6;
+$color-info: #0bb4c1;
+$color-danger: #ff005d;
+$color-success: #00d49d;
+$color-tip: #fedf03;
+
+$font-color: #363636;
+$color-dark: #161616;
+
+// Screen breakpoints
+$phone: 500px;
+$tablet: 800px;
+$desktop: 1200px;
+
+* {
+	color: $font-color;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+	&.primary {
+		color: $color-primary;
+	}
+
+	&.info {
+		color: $color-info;
+	}
+
+	&.danger {
+		color: $color-danger;
+	}
+
+	&.success {
+		color: $color-success;
+	}
+
+	&.tip {
+		color: $color-tip;
+	}
+
+	&.center-text {
+		text-align: center;
+	}
+}
+
+.size {
+	&-1 {
+		font-size: 3rem;
+		margin: 18px 0;
+	}
+
+	&-2 {
+		font-size: 2.6rem;
+		margin: 15px 0;
+	}
+
+	&-3 {
+		font-size: 2.2rem;
+		margin: 12px 0;
+	}
+
+	&-4 {
+		font-size: 1.8rem;
+		margin: 9px 0;
+	}
+
+	&-5 {
+		font-size: 1.4rem;
+		margin: 6px 0;
+	}
+
+	&-6 {
+		font-size: 1rem;
+		margin: 3px 0;
+	}
+}
+
+// Buttons
+.btn {
+	padding: 8px 20px;
+
+	border: none;
+	border-radius: 5px;
+
+	background-color: white;
+
+	cursor: pointer;
+
+	// States
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	// Styles
+	&-rounded {
+		border-radius: 20px;
+	}
+
+	// Positions
+	&.pull-left {
+		float: left;
+	}
+
+	&.pull-right {
+		float: right;
+	}
+
+	// Colors
+	&-primary {
+		background-color: $color-primary;
+		color: white;
+	}
+
+	&-info {
+		background-color: $color-info;
+		color: white;
+	}
+
+	&-danger {
+		background-color: $color-danger;
+		color: white;
+	}
+
+	&-success {
+		background-color: $color-success;
+		color: white;
+	}
+
+	&-tip {
+		background-color: $color-tip;
+		color: white;
+	}
+
+	// Shadows
+	&-lift {
+		&-1 {
+			box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+
+			&:hover {
+				box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+			}
+		}
+
+		&-2 {
+			box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+
+			&:hover {
+				box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+			}
+		}
+
+		&-3 {
+			box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+
+			&:hover {
+				box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.35);
+			}
+		}
+
+		&-4 {
+			box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4);
+
+			&:hover {
+				box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.45);
+			}
+		}
+	}
+}
+
+// Cards
+.card {
+	border-radius: 5px;
+
+	background-color: white;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+
+	.card-image {
+		border-radius: 5px 5px 0px 0px;
+		width: 100%;
+		height: auto;
+
+		img {
+			border-radius: 5px 5px 0px 0px;
+			width: 100%;
+		}
+	}
+
+	.card-content {
+		padding: 20px;
+	}
+}
+
+// Forms
+.form .form-field {
+	.input {
+		display: block;
+
+		padding: 5px;
+		margin-bottom: 20px;
+
+		border: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid $color-primary;
+		}
+	}
+
+	.textarea {
+		display: block;
+
+		padding: 10px;
+		margin-bottom: 20px;
+
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+
+		&:focus {
+			outline: none;
+			border: 1px solid $color-primary;
+		}
+	}
+
+	.select {
+		padding: 5px;
+
+		border-radius: 5px;
+
+		option[disabled] {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+
+		&:focus {
+			outline: none;
+			border: 1px solid $color-primary;
+		}
+	}
+
+	&.inline {
+		.input {
+			display: inline-block;
+
+			margin-bottom: 0px;
+		}
+	}
+}
+
+// Tables
+.table {
+	width: 100%;
+	border-collapse: collapse;
+
+	tr {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+		th,
+		td {
+			padding: 10px;
+		}
+
+		&.bordered {
+			th,
+			td {
+				border: 1px solid rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+
+	thead {
+		text-align: left;
+	}
+
+	&.bordered {
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+}
+
+// Lists
+.list {
+	margin: 10px 0px;
+	padding: 0;
+	list-style-type: none;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+	border-radius: 5px;
+
+	li.list-item {
+		padding: 10px 20px;
+		color: black;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+		&.active {
+			background-color: $color-primary;
+			color: white;
+		}
+	}
+}
+
+// Grid
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+	max-width: 1100px;
+	width: 100%;
+}
+
+.row {
+	width: 100%;
+	overflow: hidden;
+}
+
+.col {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+// Notifications
+.notification {
+	margin: 15px 0px;
+	padding: 20px;
+
+	border-radius: 10px;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+
+	&.primary {
+		border-left: 5px solid $color-primary;
+	}
+
+	&.info {
+		border-left: 5px solid $color-info;
+	}
+
+	&.danger {
+		border-left: 5px solid $color-danger;
+	}
+
+	&.success {
+		border-left: 5px solid $color-success;
+	}
+
+	&.tip {
+		border-left: 5px solid $color-tip;
+	}
+}
+
+@media (min-width: $phone) {
+	.container {
+		width: 85%;
+	}
+
+	.col {
+		&-1 {
+			width: (100% / 12);
+		}
+
+		&-2 {
+			width: (100% / 12 * 2);
+		}
+
+		&-3 {
+			width: (100% / 12 * 3);
+		}
+
+		&-4 {
+			width: (100% / 12 * 4);
+		}
+
+		&-5 {
+			width: (100% / 12 * 5);
+		}
+
+		&-6 {
+			width: (100% / 12 * 6);
+		}
+
+		&-7 {
+			width: (100% / 12 * 7);
+		}
+
+		&-8 {
+			width: (100% / 12 * 8);
+		}
+
+		&-9 {
+			width: (100% / 12 * 9);
+		}
+
+		&-10 {
+			width: (100% / 12 * 10);
+		}
+
+		&-11 {
+			width: (100% / 12 * 11);
+		}
+
+		&-12 {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: $tablet) {
+	.container {
+		width: 80%;
+	}
+}
+
+@media (min-width: $desktop) {
+	.container {
+		width: 75%;
+	}
+}

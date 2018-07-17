@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chalk CSS - Simple and Clean</title>
+    <link rel="stylesheet" href="css/chalk.css">
+    <style>
+        .brand {
+            margin: 100px 0px;
+        }
+
+        .small {
+            font-size: 0.85rem;
+        }
+
+        .section {
+            margin: 50px 0px;
+        }
+
+        .code {
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border-left: 3px solid #0085b6;
+            background-color: whitesmoke;
+            overflow-x: auto;
+        }
+
+        .description {
+            margin: 15px 0px;
+        }
+
+        .navigation {
+            margin-left: 20px;
+        }
+
+        #grid .col p {
+            background-color: #dbdbdb;
+            padding: 5px 0px;
+            border-radius: 5px;
+        }
+
+        .hr {
+            width: 100%;
+            height: 1px;
+            margin: 20px 0px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .button-group {
+            margin: 30px 0px;
+        }
+
+        .button-group .btn {
+            margin: 5px;
+        }
+
+        .command {
+            background-color: #dbdbdb;
+            padding: 2px;
+            border-radius: 3px;
+        }
+
+        .form {
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="brand">
+            <p class="size-1 center-text">Chalk CSS</p>
+            <p class="small center-text">Simple and clean.</p>
+        </div>
+
+        <div class="section">
+            <h1 class="size-4">What is Chalk CSS?</h1>
+            <p>
+                Chalk CSS is a lightweight css framework that allows you to make your website look clean and simple. It has a simple grid
+                system and uses soft font types and colors. If you need a simple and clean looking site, then this is the
+                perfect framework for you. Get Chalk CSS now by following the guide below.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1 class="size-4">How to install Chalk CSS</h1>
+
+            <p class="description">Clone the project from github:</p>
+            <div class="code">
+                <p>$ git clone https://github.com/rowanryan/chalkcss</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h1 class="size-4">Explore</h1>
+
+            <ul class="navigation">
+                <li>
+                    <a href="#grid">Grid</a>
+                </li>
+                <li>
+                    <a href="#typography">Typography</a>
+                </li>
+                <li>
+                    <a href="#buttons">Buttons</a>
+                </li>
+                <li>
+                    <a href="#cards">Cards</a>
+                </li>
+                <li>
+                    <a href="#forms">Forms</a>
+                </li>
+                <li>
+                    <a href="#tables">Tables</a>
+                </li>
+                <li>
+                    <a href="#lists">Lists</a>
+                </li>
+                <li>
+                    <a href="#notifications">Notifications</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="grid" class="section">
+            <h1 class="size-4">Grid</h1>
+
+            <p class="description">
+                The grid system is simple. To use the grid system, you first need a row. You will be able to make columns in that row. The
+                grid is divided in 12 parts and each column can take up multiple parts.
+            </p>
+
+            <div class="code">
+                <pre><code>&lt;div class="row"&gt;
+            &lt;div class="col col-3"&gt;
+                &lt;p&gt;.col col-3&lt;/p&gt;
+            &lt;/div&gt;
+    
+            &lt;div class="col col-6"&gt;
+                &lt;p&gt;.col col-6&lt;/p&gt;
+            &lt;/div&gt;
+    
+            &lt;div class="col col-3"&gt;
+                &lt;p&gt;.col col-3&lt;/p&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col col-3">
+                    <p class="center-text">.col col-3</p>
+                </div>
+
+                <div class="col col-6">
+                    <p class="center-text">.col col-6</p>
+                </div>
+
+                <div class="col col-3">
+                    <p class="center-text">.col col-3</p>
+                </div>
+            </div>
+
+            <p class="description">
+                As you can see, you can use the grid however you like. Do keep in mind that a row can only hold 12 parts. That means that
+                you have to start a new row if you've used up all 12 parts in one row. Below, you will find an example.
+            </p>
+
+            <div class="row">
+                <div class="col col-1">
+                    <p class="center-text">1</p>
+                </div>
+
+                <div class="col col-11">
+                    <p class="center-text">11</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-2">
+                    <p class="center-text">2</p>
+                </div>
+
+                <div class="col col-10">
+                    <p class="center-text">10</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-3">
+                    <p class="center-text">3</p>
+                </div>
+
+                <div class="col col-9">
+                    <p class="center-text">9</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-4">
+                    <p class="center-text">4</p>
+                </div>
+
+                <div class="col col-8">
+                    <p class="center-text">8</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-5">
+                    <p class="center-text">5</p>
+                </div>
+
+                <div class="col col-7">
+                    <p class="center-text">7</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-6">
+                    <p class="center-text">6</p>
+                </div>
+
+                <div class="col col-6">
+                    <p class="center-text">6</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-7">
+                    <p class="center-text">7</p>
+                </div>
+
+                <div class="col col-5">
+                    <p class="center-text">5</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-8">
+                    <p class="center-text">8</p>
+                </div>
+
+                <div class="col col-4">
+                    <p class="center-text">4</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col col-9">
+                    <p class="center-text">9</p>
+                </div>
+
+                <div class="col col-3">
+                    <p class="center-text">3</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-10">
+                    <p class="center-text">10</p>
+                </div>
+
+                <div class="col col-2">
+                    <p class="center-text">2</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-11">
+                    <p class="center-text">11</p>
+                </div>
+
+                <div class="col col-1">
+                    <p class="center-text">1</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="typography" class="section">
+            <h1 class="size-4">Typography</h1>
+
+            <p class="description">To flourish up your text, make use of the classes below.</p>
+
+            <h1 class="size-6">For headers:</h1>
+            <h1 class="size-1">.size-1</h1>
+            <h1 class="size-2">.size-2</h1>
+            <h1 class="size-3">.size-3</h1>
+            <h1 class="size-4">.size-4</h1>
+            <h1 class="size-5">.size-5</h1>
+            <h1 class="size-6">.size-6</h1>
+
+            <br>
+
+            <h1 class="size-6">For paragraphs:</h1>
+            <p class="size-1">.size-1</p>
+            <p class="size-2">.size-2</p>
+            <p class="size-3">.size-3</p>
+            <p class="size-4">.size-4</p>
+            <p class="size-5">.size-5</p>
+            <p class="size-6">.size-6</p>
+
+            <br>
+
+            <h1 class="size-6">Assing colors to text:</h1>
+            <p class="primary">.primary</p>
+            <p class="info">.info</p>
+            <p class="danger">.danger</p>
+            <p class="success">.success</p>
+            <p class="tip">.tip</p>
+
+            <div class="notification danger">
+                <p>The color of text can only be changed if it's wrapped by a h1, h2, h3, h4, h5, h6, p, a or span.</p>
+            </div>
+        </div>
+
+        <div id="buttons" class="section">
+            <h1 class="size-4">Buttons</h1>
+
+            <p class="description">Chalk CSS also offers a number of button styles. All button classes can be mixed to get the result you want.</p>
+
+            <h1 class="size-6">Normal buttons</h1>
+
+            <p>All you need for this effect is:</p>
+            <br>
+            <div class="code">
+                <p>.btn btn-primary</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-info">info</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-success">success</button>
+                <button class="btn btn-tip">tip</button>
+            </div>
+
+            <div class="hr"></div>
+
+            <h1 class="size-6">Rounded buttons</h1>
+
+            <p>
+                To make buttons rounded, add
+                <span class="command">btn-rounded</span>:
+            </p>
+            <br>
+            <div class="code">
+                <p>.btn btn-primary btn-rounded</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary btn-rounded">primary</button>
+                <button class="btn btn-info btn-rounded">info</button>
+                <button class="btn btn-danger btn-rounded">danger</button>
+                <button class="btn btn-success btn-rounded">success</button>
+                <button class="btn btn-tip btn-rounded">tip</button>
+            </div>
+
+            <div class="hr"></div>
+
+            <h1 class="size-6">Lifted buttons</h1>
+
+            <p>
+                Add
+                <span class="command">btn-lift-#</span> to a button for a floating effect:
+            </p>
+            <br>
+            <div class="code">
+                <p>.btn .btn-lift-1</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-lift-1">btn-lift-1</button>
+                <button class="btn btn-lift-2">btn-lift-2</button>
+                <button class="btn btn-lift-3">btn-lift-3</button>
+                <button class="btn btn-lift-4">btn-lift-4</button>
+            </div>
+
+            <div class="hr"></div>
+
+            <h1 class="size-6">Lifted, rounded and colored</h1>
+
+            <p>Mix classes to get the results you want:</p>
+            <br>
+            <div class="code">
+                <p>.btn btn-primary btn-rounded btn-lift-4</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary btn-rounded btn-lift-4">primary</button>
+                <button class="btn btn-info btn-rounded btn-lift-4">info</button>
+                <button class="btn btn-danger btn-rounded btn-lift-4">danger</button>
+                <button class="btn btn-success btn-rounded btn-lift-4">success</button>
+                <button class="btn btn-tip btn-rounded btn-lift-4">tip</button>
+            </div>
+        </div>
+
+        <div id="cards" class="section">
+            <h1 class="size-4">Cards</h1>
+
+            <p class="description">Cards are simple objects that can be used to display information. A good use-case for a card would be to show
+                an item in a webshop.</p>
+            <div class="row">
+                <div class="col col-8">
+                    <div class="code">
+                        <pre><code>&lt;div class="card"&gt;
+        &lt;div class="card-image"&gt;
+                &lt;img src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?auto=compress&cs=tinysrgb&h=350" alt="card"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="card-content"&gt;
+                &lt;h1 class="size-6"&gt;Title&lt;/h1&gt;
+                &lt;br&gt;
+                &lt;p&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse voluptate nesciunt eligendi quod consequuntur iste corrupti pariatur.
+                &lt;/p&gt;
+
+                &lt;button class="btn btn-primary"&gt;Add&lt;/button&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?auto=compress&cs=tinysrgb&h=350" alt="card">
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="size-6">Title</h1>
+
+                            <br>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse voluptate nesciunt eligendi quod consequuntur iste
+                                corrupti pariatur.
+                            </p>
+
+                            <br>
+
+                            <button class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="forms" class="section">
+            <h1 class="size-4">Forms</h1>
+
+            <p class="description">
+                Forms are an essential part of every CSS framework. Chalk CSS keeps it simple and clean. Every group of inputs are wrapped
+                by form field. Form fields are made by adding
+                <span class="command">form-field</span> as a class to a div. Inline fields are also available. To make a field inline, add the
+                <span class="command">inline</span> class to the form field. Inputs must always have the class
+                <span class="command">input</span> assigned to have the styling applied.
+            </p>
+
+            <h1 class="size-6">Normal form field</h1>
+            <br>
+            <div class="code">
+                <pre><code>&lt;form class="form"&gt;
+        &lt;div class="form-field"&gt;
+                &lt;input type="text" class="input" placeholder="Name"&gt;
+                &lt;input type="email" class="input" placeholder="Email"&gt;
+        &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+            </div>
+
+            <form class="form">
+                <div class="form-field">
+                    <input type="text" class="input" placeholder="Name">
+                    <input type="email" class="input" placeholder="Email">
+                </div>
+            </form>
+
+            <div class="hr"></div>
+
+            <h1 class="size-6">Inline form field</h1>
+            <br>
+            <div class="code">
+                <pre><code>&lt;form class="form"&gt;
+        &lt;div class="form-field inline"&gt;
+                &lt;input type="text" class="input" placeholder="Name"&gt;
+                &lt;input type="email" class="input" placeholder="Email"&gt;
+        &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+            </div>
+
+            <form class="form">
+                <div class="form-field inline">
+                    <input type="password" class="input" placeholder="Password">
+                    <input type="password" class="input" placeholder="Confirm password">
+                </div>
+            </form>
+
+            <div class="hr"></div>
+
+            <h1 class="size-6">Textarea</h1>
+            <br>
+            <div class="code">
+                <pre><code>&lt;form class="form"&gt;
+        &lt;div class="form-field"&gt;
+                &lt;textarea class="textarea" cols="50" rows="10"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+            </div>
+
+            <form class="form">
+                <div class="form-field">
+                    <textarea class="textarea" cols="50" rows="10"></textarea>
+                </div>
+            </form>
+
+            <div class="hr"></div>
+
+            <h1 class="size-6">Select</h1>
+            <br>
+            <div class="code">
+                <pre><code>&lt;form class="form"&gt;
+        &lt;div class="form-field"&gt;
+                &lt;select class="select"&gt;
+                    &lt;option disabled&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                &lt;/select>
+        &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+            </div>
+
+            <form class="form">
+                <div class="form-field">
+                    <select class="select">
+                        <option disabled>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div id="tables" class="section">
+            <h1 class="size-4">Tables</h1>
+
+            <p class="description">
+                Tables are the easiest way to display structured data. All you need to do is assign the class
+                <span class="command">table</span>
+                to the main table element.
+            </p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Alias</th>
+                        <th>Height</th>
+                        <th>Comics universe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bruce Wayne</td>
+                        <td>Batman</td>
+                        <td>6'2" (188 cm)</td>
+                        <td>DC Comics</td>
+                    </tr>
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>Spiderman</td>
+                        <td>5'10" (178 cm)</td>
+                        <td>Marvel</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <p class="description">
+                You can also add the
+                <span class="command">bordered</span> class to the main table element to surround the table with a border.
+            </p>
+
+            <table class="table bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Alias</th>
+                        <th>Height</th>
+                        <th>Comics universe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bruce Wayne</td>
+                        <td>Batman</td>
+                        <td>6'2" (188 cm)</td>
+                        <td>DC Comics</td>
+                    </tr>
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>Spiderman</td>
+                        <td>5'10" (178 cm)</td>
+                        <td>Marvel</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <p class="description">
+                In addition to adding the
+                <span class="command">bordered</span>
+                class to the main element, you can add
+                <span class="command">bordered</span>
+                to each seperate row.
+            </p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Alias</th>
+                        <th>Height</th>
+                        <th>Comics universe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bordered">
+                        <td>Bruce Wayne</td>
+                        <td>Batman</td>
+                        <td>6'2" (188 cm)</td>
+                        <td>DC Comics</td>
+                    </tr>
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>Spiderman</td>
+                        <td>5'10" (178 cm)</td>
+                        <td>Marvel</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="lists" class="section">
+            <h1 class="size-4">Lists</h1>
+
+            <p class="description">
+                All you need to do to make a list is add the
+                <span class="command">list</span>
+                class to a
+                <span class="command">ul</span>
+                or
+                <span class="command">ol</span>
+                element. Each list item takes the class
+                <span class="command">list-item</span>
+                . To make a list-item active, add the
+                <span class="command">active</span>
+                class.
+            </p>
+
+            <br>
+
+            <div class="code">
+                <pre><code>&lt;ul class="list"&gt;
+                &lt;li class="list-item"&gt;list-item&lt;/li&gt;
+                &lt;li class="list-item active"&gt;list-item active&lt;/li&gt;
+                &lt;li class="list-item"&gt;list-item&lt;/li&gt;
+        &lt;/ul&gt;
+</code></pre>
+            </div>
+
+            <ul class="list">
+                <li class="list-item">list-item</li>
+                <li class="list-item active">list-item active</li>
+                <li class="list-item">list-item</li>
+            </ul>
+        </div>
+
+        <div id="notifications" class="section">
+            <h1 class="size-4">Notifications</h1>
+
+            <p class="description">
+                A notification is a handy little object to notify your visitors of something. Add the
+                <span class="command">notification</span>
+                class to a div for the styling to appear. You can add a color to the notification by adding one of the color classes to the
+                notification.
+            </p>
+
+            <br>
+
+            <div class="code">
+                <pre><code>&lt;div class="notification primary"&gt;
+        &lt;p&gt;
+                Your subscription has expired! Click
+                &lt;a href="#notifications" class="primary"&gt;here&lt;/a&gt;
+                to renew your subscription
+        &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+
+            <div id="notifications">
+                <div class="notification primary">
+                    <p>Your subscription has expired! Click
+                        <a href="#notifications" class="primary">here</a> to renew your subscription
+                    </p>
+                </div>
+                <div class="notification info">
+                    <p>Your subscription has expired! Click
+                        <a href="#notifications" class="primary">here</a> to renew your subscription
+                    </p>
+                </div>
+                <div class="notification danger">
+                    <p>Your subscription has expired! Click
+                        <a href="#notifications" class="primary">here</a> to renew your subscription
+                    </p>
+                </div>
+                <div class="notification success">
+                    <p>Your subscription has expired! Click
+                        <a href="#notifications" class="primary">here</a> to renew your subscription
+                    </p>
+                </div>
+                <div class="notification tip">
+                    <p>Your subscription has expired! Click
+                        <a href="#notifications" class="primary">here</a> to renew your subscription
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="center-text">This framework is licensed MIT - Jonathan van de Groep / rowanryan</p>
+        </footer>
+    </div>
+</body>
+
+</html>
